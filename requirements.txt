@@ -6,3 +6,4 @@ python-engineio
 Werkzeug
 cryptography
 gunicorn
+eventlet
