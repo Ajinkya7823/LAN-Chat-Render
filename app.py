@@ -1061,6 +1061,9 @@ def handle_group_deleted(data):
     group_id = data.get('group_id')
     emit('group_deleted', {'group_id': group_id}, broadcast=True)
 
+with app.app_context():
+    db.create_all()
+
 # --- Main Entrypoint ---
 if __name__ == '__main__':
     # Ensure upload directory exists
