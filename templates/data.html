@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Files - LANChatShare</title>
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/icons/bootstrap-icons.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/chat">LANChatShare</a>
+      <div class="d-flex">
+        <span class="navbar-text me-3">Logged in as <b>{{ username }}</b></span>
+        <a href="/logout" class="btn btn-outline-light btn-sm">Logout</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <h3 class="mb-4">All Files Sent & Received</h3>
+    <div class="mb-3">
+      <a href="/chat" class="btn btn-secondary">Back to Chat</a>
+    </div>
+    <table class="table table-bordered table-hover align-middle" id="files-table">
+      <thead class="table-light">
+        <tr>
+          <th>File Name</th>
+          <th>Type</th>
+          <th>Sender</th>
+          <th>Receivers</th>
+          <th>Sent At</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in files %}
+        <tr>
+          <td>{{ entry.file.original_name }}</td>
+          <td>{{ entry.file.mimetype }}</td>
+          <td>{{ entry.sender }}</td>
+          <td>{{ entry.recipients }}</td>
+          <td>{{ entry.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+          <td>
+            <div class="btn-group" role="group">
+              <a href="/uploads/{{ entry.file.filename }}?download=1" class="btn btn-success btn-sm" title="Download"><i
+                  class="bi bi-download"></i> Download</a>
+              {% if entry.file.mimetype.startswith('image/') %}
+              <a href="/uploads/{{ entry.file.filename }}" target="_blank" class="btn btn-info btn-sm" title="View"><i
+                  class="bi bi-image"></i> View</a>
+              {% elif entry.file.mimetype.startswith('video/') %}
+              <a href="/uploads/{{ entry.file.filename }}" target="_blank" class="btn btn-info btn-sm" title="Play"><i
+                  class="bi bi-play-circle"></i> Play</a>
+              {% endif %}
+              <button class="btn btn-danger btn-sm delete-file-btn" data-file-id="{{ entry.file.id }}" title="Delete"><i
+                  class="bi bi-trash"></i> Delete</button>
+            </div>
+          </td>
+        </tr>
+        {% else %}
+        <tr>
+          <td colspan="6" class="text-center">No files found.</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    // Interactive: filter/search
+    $(function () {
+      $('#files-table').before('<input type="text" id="file-search" class="form-control mb-3" placeholder="Search files...">');
+      $('#file-search').on('keyup', function () {
+        let val = $(this).val().toLowerCase();
+        $('#files-table tbody tr').each(function () {
+          let row = $(this);
+          let match = row.text().toLowerCase().indexOf(val) > -1;
+          row.toggle(match);
+        });
+      });
+
+      // Delete file handler
+      $(document).on('click', '.delete-file-btn', function () {
+        if (!confirm('Are you sure you want to delete this file and all related messages?')) return;
+        let fileId = $(this).data('file-id');
+        let row = $(this).closest('tr');
+        $.post(`/delete_file/${fileId}`, function (resp) {
+          if (resp.success) {
+            row.remove();
+          } else {
+            alert(resp.error || 'Delete failed');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+Employee ID,Full Name,Email,Phone,Address,Department,Role,Date of Joining,Basic Salary (INR)
+EMP0001,Richard White DDS,danielpatel@gmail.com,699.744.9325,"6646 Kimberly Villages Apt. 205, New Cathystad, WA 44451",Sales,Analyst,2017-07-30,41185
+EMP0002,Charles Smith PhD,garyconrad@yahoo.com,001-951-786-0705x4623,"72001 Jonathan Harbor Apt. 852, Port Kyle, WV 02367",Finance,Manager,2024-11-18,48246
+EMP0003,Kim Jenkins,scott21@miller.net,5698952229,"441 Thompson Drives Suite 102, New Jerrychester, WV 52534",Marketing,Executive,2022-12-06,24254
+EMP0004,Kristina Schneider,austinshannon@lawson.com,(127)089-5367x74545,"586 Munoz Stream, East Alexstad, AR 96080",Finance,Assistant,2025-04-03,83845
+EMP0005,Stephanie Powell,rkey@gill.com,129-485-3641,"52920 Anderson Dam Apt. 324, South Brookemouth, SD 82015",HR,Executive,2016-05-20,117445
+EMP0006,Virginia Wright DDS,cchapman@yahoo.com,887-048-3543,"682 Murray Way Suite 408, Port William, NY 32625",Support,Analyst,2019-02-10,59440
+EMP0007,Darlene Eaton,deckermelissa@hotmail.com,+1-897-657-1679,"88462 Fleming Extension, South David, GA 62901",Support,Executive,2018-03-19,104984
+EMP0008,Sharon Hunter,carsonchristopher@santiago-pena.net,001-357-235-6179x975,"48675 Smith Unions Suite 297, Gailburgh, HI 36416",Finance,Assistant,2019-11-17,69564
+EMP0009,Erika Arnold,vmurray@leach.net,(675)370-9468,"819 Ryan Valley Suite 255, Gutierrezland, FL 26760",Finance,Assistant,2024-02-29,79620
+EMP0010,Alexis Navarro,christine77@ewing.com,(481)668-3749x52159,"7433 Ross Stream, Lake Kenneth, VT 91653",Marketing,Intern,2021-10-14,113325
+EMP0011,Brandi Edwards,george81@carter.com,+1-502-636-7961x17139,"9258 Karen Ranch Suite 977, Williefort, CO 16005",HR,Analyst,2015-08-25,43402
+EMP0012,William Gay,amandaperez@henry-woodward.info,001-396-208-1629x0418,"57158 Cobb Center, Amberview, TN 38996",Support,Analyst,2016-07-22,106762
+EMP0013,Allison Carrillo,erin92@yahoo.com,(953)873-0696,"53409 Bowen Path Apt. 202, South Jeremyville, MD 29055",Finance,Assistant,2017-03-08,25810
+EMP0014,Anthony Hernandez,xdeleon@cole.biz,+1-199-861-3822x3835,"3934 Michael Spurs Apt. 446, East Sandramouth, ME 10847",Sales,Analyst,2023-05-31,28976
+EMP0015,Alicia Kramer,skim@johnson.com,(487)534-8336x4273,"6419 Michael Hills, North Cynthia, IL 85826",Finance,Manager,2016-02-23,21485
+EMP0016,Tiffany Boyd,bradfordjacqueline@yahoo.com,+1-409-183-8670x63152,"7119 Anderson Passage Suite 024, Martinezfurt, CO 81137",IT,Manager,2019-02-18,89674
+EMP0017,Emily Brooks,gutierrezheather@gmail.com,(029)827-8005,"USNV Webster, FPO AP 36179",Marketing,Developer,2023-01-03,85041
+EMP0018,Virginia Romero,annamcdowell@smith-salazar.org,083-656-2853,"2047 Bryan Mills, Normabury, ID 31472",HR,Analyst,2017-01-19,65222
+EMP0019,Carla Cooper,hflores@hotmail.com,8362783851,"5295 Gates Heights, Cartershire, NY 34331",Finance,Developer,2019-10-01,66529
+EMP0020,Marcus Powell,alexiskelley@gregory-levy.com,001-147-360-3042x15227,"512 Smith Flats Suite 739, Rebekahberg, ND 86438",Support,Analyst,2021-04-15,43757
+EMP0021,Wanda Richards,vmorrow@yahoo.com,+1-852-674-9386x2933,"PSC 3089, Box 3471, APO AA 70613",Support,Intern,2016-05-11,29783
+EMP0022,Samantha Horton,qadkins@yahoo.com,(576)657-5969x6259,"PSC 9689, Box 3815, APO AA 25642",Marketing,Executive,2017-08-25,40959
+EMP0023,Steven Massey,deanadam@young.biz,179-013-9029,"068 Baker Bridge, North Kristaberg, ME 28658",Finance,Developer,2024-09-27,78149
+EMP0024,Louis Garcia,kaylaprice@gmail.com,(285)561-8310x75354,"244 Ashley Underpass, Katrinachester, LA 78019",HR,Executive,2020-02-20,61456
+EMP0025,Wayne Rose,reneefields@valenzuela.net,(525)134-1711x53254,"971 Amanda Knoll, South John, MI 05056",HR,Executive,2020-04-21,38949
+EMP0026,Amy Smith,kbaker@gmail.com,122.534.9356,"0774 Gerald Wells Apt. 539, New Hector, NM 78970",IT,Manager,2024-03-05,69297
+EMP0027,Eric Johnson,raymond40@hotmail.com,+1-218-528-8536,"48038 Baldwin Avenue Apt. 422, East Carolton, LA 28723",IT,Developer,2019-05-21,94109
+EMP0028,Mary Velasquez,james49@tran.info,8648591741,"654 Ibarra Garden Suite 912, Fisherview, SC 84397",Sales,Developer,2024-01-09,94319
+EMP0029,Kyle Baker,jamesaaron@hotmail.com,168.803.0259,"USNV David, FPO AP 57126",Finance,Assistant,2021-10-14,49657
+EMP0030,Isabel Villarreal,robertcabrera@gmail.com,331.714.8791,"9961 Young Avenue, Lake Denniston, CA 06475",IT,Executive,2017-03-28,68710
+EMP0031,Ricky Gutierrez,masonbethany@gmail.com,947.354.9585,"6473 Daniel Highway, Deborahland, TN 48590",Sales,Intern,2023-11-18,82721
+EMP0032,Laura Rodriguez,jonesluis@jenkins.info,(027)672-1565x591,"Unit 5033 Box 9054, DPO AE 03195",Sales,Executive,2023-05-06,20343
+EMP0033,Stacy Hill,cwarner@jones-rodriguez.com,(724)979-1447,"5992 Jordan Row, West Barry, NV 42640",HR,Assistant,2015-07-02,44497
+EMP0034,Michele Conley,humphreyamanda@jenkins-kennedy.com,001-612-173-0289x041,"9734 Woods Cape Suite 351, North John, LA 58792",Marketing,Assistant,2017-05-04,34997
+EMP0035,Diane Spears,nsmith@schmidt.com,+1-521-886-6681x05891,"83203 Cervantes Bridge, Aguirreshire, TX 97123",Support,Developer,2018-07-27,29149
+EMP0036,Carol Lyons,meyerpaul@yahoo.com,461.875.0516x09009,"6772 Joseph Track Suite 465, Laurenside, VT 55909",HR,Analyst,2017-12-15,46484
+EMP0037,Richard Thomas,quinnsusan@allen.com,172.799.9599x847,"09612 Michelle Ways, Caintown, ND 36618",Finance,Assistant,2024-03-27,77799
+EMP0038,Whitney Mendez,mary14@wilson-cochran.com,+1-548-665-4433,"1022 Clark Ford Apt. 463, East Kayla, OR 94710",IT,Developer,2022-01-20,111021
+EMP0039,Michelle Mclean,dyoung@yahoo.com,+1-888-885-4973x807,"51395 Reyes Drive, Port Daniel, DE 75631",IT,Assistant,2024-10-06,53178
+EMP0040,Tara Adams,tpham@holt-cowan.com,001-285-386-9463x1548,"Unit 6619 Box 6803, DPO AE 03728",HR,Executive,2024-07-07,68178
+EMP0041,Michael Martin,yreyes@gmail.com,001-801-719-5752x78399,"234 Wise Corner, New Alexfort, SC 07603",IT,Executive,2017-05-06,93138
+EMP0042,Matthew Ray,anitacooley@yahoo.com,001-408-544-1739x020,"85327 Audrey Via, Smithmouth, AL 51001",HR,Assistant,2021-11-19,41421
+EMP0043,Mary Martinez,lesterbrenda@gmail.com,+1-976-655-1825x131,"3289 Taylor Keys Apt. 497, Jonesmouth, NM 26771",Finance,Developer,2019-02-27,48678
+EMP0044,Clifford Graves,james01@aguirre-simpson.net,(921)663-2196x9085,"121 Melanie Forest, Kevinland, IL 74779",IT,Manager,2017-12-17,85223
+EMP0045,Shawna Thomas,ngray@hernandez-thomas.com,001-741-221-8793x3309,"7182 David Ports Suite 785, Amandaview, WV 64901",Finance,Developer,2021-05-05,91524
+EMP0046,Mr. Thomas Johnson,jasminemccann@hotmail.com,267.184.1871x31460,"600 David Club, Stevenstad, IA 73753",Sales,Intern,2019-02-17,89193
+EMP0047,Tammy Goodman,melissa21@moss-smith.net,3825672994,"214 Thompson Turnpike, Alisonside, AR 30796",HR,Developer,2018-07-08,112265
+EMP0048,Mr. Eric Maldonado,samuel18@hale-wright.info,001-868-325-6432,"8395 Fry Meadow, Camposchester, CT 45399",Finance,Developer,2017-03-31,65397
+EMP0049,Michaela Flores,michael66@yahoo.com,455.304.5348x5077,"16871 Garcia Prairie, Ashleyshire, OH 94627",Sales,Analyst,2022-10-22,81602
+EMP0050,Matthew Cabrera,erinharding@foster.com,+1-752-589-3329,"217 Wood Mill, South Christophertown, ID 16121",Marketing,Developer,2023-03-03,116298
+EMP0051,Craig Reeves,susan67@gmail.com,001-568-612-6353x3404,"1552 Rios Dale, Morrisbury, PA 65009",Support,Developer,2019-02-04,56351
+EMP0052,Laura Frank,blackandrew@hotmail.com,(082)394-4737x617,"17832 Sara Circle, Kingborough, IN 62806",HR,Analyst,2023-10-13,51540
+EMP0053,Michael Mcintyre,ruth76@gmail.com,(768)780-8301,"402 Leon Walks, Smithport, IL 13853",Support,Manager,2019-06-05,86941
+EMP0054,James King,brianharris@gmail.com,404.029.7786,"492 James Unions, Lake Kaylatown, SD 96369",Marketing,Executive,2015-08-15,63497
+EMP0055,David Kelley,jjohnson@charles.org,069.269.6273x1126,"USNV Guerra, FPO AA 18903",Support,Executive,2021-03-23,61134
+EMP0056,Alexa Chan MD,donnaandrews@williams-moody.org,894.111.4819,"61177 Christopher Greens, South Holly, KY 08217",Finance,Manager,2024-06-03,83733
+EMP0057,Kathryn Matthews MD,vsanchez@howard.com,+1-148-252-2982x914,"713 Rogers Club, New Nina, GA 87223",Sales,Analyst,2020-08-19,26208
+EMP0058,Jeffrey Davidson,michaelcervantes@gmail.com,+1-675-245-7962x71623,"540 Price Ramp Suite 712, North Colleen, OH 06398",IT,Analyst,2018-07-07,66950
+EMP0059,Whitney Hansen,tiffanyeverett@yahoo.com,574.957.2289,"407 Donna Hills Suite 926, Lake Angelaside, TX 27658",Sales,Developer,2022-02-08,24898
+EMP0060,Jennifer Schroeder,lauren58@yahoo.com,+1-381-213-2147x259,"764 James Stravenue Apt. 284, Reedmouth, OK 86208",Support,Assistant,2021-08-14,30687
+EMP0061,Logan Chapman,amanda15@lee.com,+1-834-825-4248,"PSC 6335, Box 9605, APO AE 91533",IT,Executive,2024-07-11,73132
+EMP0062,Gina Morrow,natalie78@hawkins-davis.org,772-827-6072x31995,"7435 Jones Gateway, Williamsborough, CT 36402",Sales,Manager,2019-11-02,93555
+EMP0063,Zachary Duran,gouldshannon@barnett-odonnell.com,(361)059-3476,"5727 Devon Isle, New Wesleyberg, TX 31637",Finance,Intern,2020-02-27,73578
+EMP0064,Cynthia Welch,grogers@schneider.com,(339)568-4447,"11053 Krause Lake, East Tonyaborough, MN 41305",Support,Developer,2016-09-18,103280
+EMP0065,Dennis Tyler,pjensen@cook.com,001-925-851-9272x96267,"70778 Sherri Corner, Joannview, WA 86736",IT,Developer,2018-07-16,98432
+EMP0066,Andrew Kirk,larrychen@yahoo.com,(445)507-0267,"444 Scott Garden Suite 841, North Lorichester, CA 19716",IT,Intern,2022-11-11,72713
+EMP0067,Laura Diaz,flewis@stevenson-bean.com,001-909-369-1493x613,"5316 Castillo Ways, New Alexisville, NY 82891",Finance,Intern,2015-07-16,38700
+EMP0068,Linda Williams,gileschristopher@morrow.com,+1-469-111-1728x366,"032 Olson Brook, North Garyborough, CT 73538",HR,Developer,2024-07-19,117881
+EMP0069,Collin Garcia,rblackwell@hotmail.com,(700)879-8335,"01301 Jackson Trail Suite 280, Williamsborough, CT 28155",Sales,Developer,2015-12-28,35386
+EMP0070,Erin Meadows,charlesnicole@hotmail.com,+1-945-821-6176,"3116 Steven Hill, Gwendolynton, TN 49216",Marketing,Assistant,2021-08-25,104526
+EMP0071,Mariah Mckee,tiffanyvaughn@bullock-king.com,+1-387-089-9780x717,"9502 Lane Ford Apt. 625, Sarahstad, ID 70259",Finance,Executive,2021-10-17,66969
+EMP0072,Kaitlin Vasquez,jacob59@perez-allison.biz,555.576.6917x213,"52848 Jenna Burg, East Sarah, NE 30724",HR,Analyst,2020-06-20,85681
+EMP0073,Richard Santiago,kim64@fleming.biz,+1-757-660-0007,"10201 Russell Freeway, West Josefort, MI 19351",Marketing,Executive,2017-12-26,96167
+EMP0074,Deanna Price,kevin73@ferguson.com,001-839-275-8595x7726,"2038 Bell Motorway Apt. 284, South Rebeccaport, SC 35528",Support,Executive,2025-03-23,56557
+EMP0075,Debra Michael,gmorales@rodriguez.com,825.731.5999x939,"311 James Station Suite 562, Dixonview, ND 26303",Marketing,Intern,2023-07-09,37288
+EMP0076,Laura Sandoval,nicholas86@hotmail.com,742-069-4167x2409,"645 Mayer Oval Apt. 625, Ryanstad, AK 97580",IT,Intern,2019-12-06,70365
+EMP0077,Nicole Davidson,harveyrichard@wade-miller.biz,(743)682-6632,"PSC 2891, Box 3374, APO AE 56923",HR,Intern,2019-11-27,26454
+EMP0078,Yolanda Miller,joannaholloway@mendoza.com,0397455765,"69689 Gallegos Flat, Reyesville, KY 01543",IT,Manager,2025-04-09,51589
+EMP0079,Luke Faulkner,parkerstephanie@armstrong-duffy.com,288-333-1492x242,"95169 Frank Cove, Bentonport, AR 80177",Sales,Analyst,2018-11-29,46446
+EMP0080,Denise Johnson,isaac43@hotmail.com,001-855-793-9649,"894 Duke Parkway Apt. 900, Melissamouth, OK 42551",IT,Assistant,2018-11-15,97564
+EMP0081,Kent Meyer,kevingarcia@gmail.com,+1-310-887-8428x10056,"4584 Walsh Harbors Suite 652, Smithfurt, TN 80501",Support,Analyst,2016-12-31,73794
+EMP0082,Rebecca Jones,choirenee@foster.net,(775)817-3738x58364,"0589 Ryan Hollow, South Denisehaven, MA 86236",Support,Intern,2017-02-21,112104
+EMP0083,Catherine Perry,marygreer@kim.org,001-084-022-0425,"13982 Derek Park Suite 703, Lake Anthony, MN 09213",Finance,Assistant,2024-08-30,85217
+EMP0084,Samantha Bean,dylangibson@wood-may.org,2700800643,"3496 Daniel Stream, Erikberg, WY 31594",Support,Assistant,2022-02-06,94087
+EMP0085,Christian Brown,zdoyle@yahoo.com,281-799-8254x162,"3097 Miles Oval Apt. 579, Olsenside, NH 93402",Sales,Developer,2020-03-20,105896
+EMP0086,Diana Ramos,smithkendra@gmail.com,(062)763-8874,"4623 Evans Streets Suite 236, Gibsonberg, SC 90339",IT,Analyst,2020-09-05,25959
+EMP0087,Scott Norris,scottross@smith.com,344-743-7127x429,"4493 Tanya Walk Suite 247, East Robert, RI 54758",IT,Assistant,2017-09-19,88623
+EMP0088,Dustin Smith,jonesamy@hotmail.com,5323170085,"206 Courtney Course, South Austin, SD 71903",Finance,Intern,2016-10-29,47969
+EMP0089,Gregory Soto,rmitchell@hotmail.com,(081)520-7511,"1676 Christina Overpass, Port Paul, ND 17123",HR,Manager,2021-03-02,57729
+EMP0090,Kathleen White,emmajames@sloan.biz,(814)119-8135x471,"683 Daisy Islands, Gouldville, AK 49600",Support,Executive,2021-08-30,38447
+EMP0091,Kendra Wagner,richardsonelizabeth@barnes.com,685.638.5070x9260,"72799 Joseph Branch, Harperside, TN 12388",Sales,Analyst,2019-08-27,44739
+EMP0092,Jill Shah,mruiz@brown-morgan.biz,001-457-103-4614x84604,"55502 Nicole Orchard, Jasmineton, MT 25821",Support,Developer,2021-05-07,37819
+EMP0093,Heidi Green,russellscott@yahoo.com,+1-297-834-3264,"641 Molly Way Apt. 612, Donnaland, ND 48194",Finance,Analyst,2023-11-13,91788
+EMP0094,Jennifer Clay,garciajohn@hotmail.com,887-107-8780,"Unit 7150 Box 9353, DPO AE 48665",Support,Executive,2021-06-25,77475
+EMP0095,Crystal Odonnell,ericaperez@griffin.com,001-566-131-2951x289,"8092 Wood Prairie Apt. 886, Lake Annebury, OH 32614",Finance,Analyst,2016-03-20,112680
+EMP0096,Gregory Morris,smithnichole@hall.com,8743579273,"49382 Kimberly Estate Apt. 019, Johnton, KY 30781",IT,Executive,2019-07-23,26400
+EMP0097,Wesley Cooper,aaron37@solis.com,7373694817,"0406 Jennifer Pike Apt. 303, Powersbury, AL 72914",Marketing,Analyst,2021-05-29,37519
+EMP0098,Robert Wu,jennapowers@mathis.org,001-081-233-0296x01670,"981 Karen Grove, New Andrea, VA 11650",IT,Manager,2019-09-18,49588
+EMP0099,Rebecca Edwards,jamie02@gibson.net,001-675-934-4715x17876,"Unit 1793 Box 5124, DPO AP 23486",Finance,Intern,2019-07-16,26164
+EMP0100,Tara Davis,ykramer@hotmail.com,(047)176-1678,"9012 Adam Plaza Suite 899, North Lacey, TX 72483",Sales,Executive,2021-04-20,90829

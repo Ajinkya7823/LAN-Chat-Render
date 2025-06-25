@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/icons/bootstrap-icons.css">
+    <style>
+        .dashboard-sections-col {
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            min-height: 350px;
+            gap: 20px;
+        }
+
+        .dashboard-section {
+            flex: 1 1 0;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            padding: 18px 16px 10px 16px;
+            height: 100%;
+        }
+
+        .dashboard-section h4 {
+            margin-bottom: 12px;
+        }
+
+        .dashboard-section .scrollable-table {
+            flex: 1 1 0;
+            min-height: 0;
+            overflow-y: auto;
+        }
+
+        .users-scrollable-table {
+            max-height: 100px;
+            min-height: 60px;
+            overflow-y: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            padding: 0 8px;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-sections-col {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .dashboard-sections-col {
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container py-4" style="height: 90vh; min-height: 600px; display: flex; flex-direction: column;">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <div class="d-flex align-items-center">
+                <img src="/static/img/baapcompany_logo.jpg" alt="Logo" style="height:40px;width:auto; cursor:pointer;" onclick="window.location.reload()" class="me-3">
+                <h2 class="mb-0">Admin Dashboard <span id="pending-requests-badge" class="badge bg-danger"
+                        style="display:none;">NEW</span></h2>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="text-center  ">
+                    <a href="/register" class="btn btn-lite"> </a>
+                </div>
+ 
+                <span class="text-muted small me-3">Logged in as: {{ admin }}</span>
+
+                <a href="/chat" class="btn btn-secondary me-3">Back to Chat</a>
+                <a href="/logout" class="btn btn-outline-danger">Logout</a>
+            </div>
+        </div>
+        <form method="POST" class="row g-2 align-items-end mb-3"
+            style="background: #f8f9fa; border-radius: 8px; padding: 10px 8px; max-width: 700px;">
+            <input type="hidden" name="action" value="create_user">
+            <div class="col-md-4 col-12">
+                <label for="new_username" class="form-label mb-0">Username</label>
+                <input type="text" class="form-control form-control-sm" id="new_username" name="new_username" required>
+            </div>
+            <div class="col-md-4 col-12">
+                <label for="new_password" class="form-label mb-0">Password</label>
+                <input type="password" class="form-control form-control-sm" id="new_password" name="new_password"
+                    required>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="new_is_admin" name="new_is_admin" value="1">
+                    <label class="form-check-label" for="new_is_admin">Admin</label>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <button type="submit" class="btn btn-primary btn-sm w-100">Add User</button>
+            </div>
+        </form>
+        {% if message %}
+        <div class="alert alert-info">{{ message }}</div>
+        {% endif %}
+        <div style="flex: 1 1 0; min-height: 0; display: flex; flex-direction: column;">
+            <div class="dashboard-sections-col">
+                <div class="dashboard-section">
+                    <h4>Pending Account Requests</h4>
+                    <div class="scrollable-table">
+                        <table class="table table-bordered table-sm mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Requested By</th>
+                                    <th>Status</th>
+                                    <th>Requested At</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for req in requests %}
+                                <tr {% if req.status=='pending' %}class="table-warning" {% endif %}>
+                                    <td>{{ req.username }}</td>
+                                    <td>{{ req.requested_by }}</td>
+                                    <td>{{ req.status }}{% if req.status == 'approved' %} by {{ req.approved_by }}{%
+                                        endif %}</td>
+                                    <td>{{ req.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                                    <td>
+                                        {% if req.status == 'pending' %}
+                                        <form method="POST" class="d-inline">
+                                            <input type="hidden" name="req_id" value="{{ req.id }}">
+                                            <button name="action" value="approve"
+                                                class="btn btn-success btn-sm">Approve</button>
+                                            <button name="action" value="reject"
+                                                class="btn btn-danger btn-sm">Reject</button>
+                                        </form>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted">No account requests.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dashboard-section">
+                    <h4>Password Reset Requests History</h4>
+                    <div class="scrollable-table">
+                        <table class="table table-bordered table-sm mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                    <th>Requested At</th>
+                                    <th>Approved/Rejected By</th>
+                                    <th>Approved/Rejected At</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for req in reset_requests %}
+                                <tr {% if req.status=='pending' %}class="table-warning" {% elif req.status=='approved'
+                                    %}class="table-success" {% elif req.status=='rejected' %}class="table-danger" {%
+                                    elif req.status=='used' %}class="table-secondary" {% endif %}>
+                                    <td>{{ req.username }}</td>
+                                    <td>{{ req.status|capitalize }}</td>
+                                    <td>{{ req.requested_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                                    <td>{% if req.approved_by %}{{ req.approved_by }}{% else %}-{% endif %}</td>
+                                    <td>{% if req.approved_at %}{{ req.approved_at.strftime('%Y-%m-%d %H:%M') }}{% else
+                                        %}-{% endif %}</td>
+                                    <td>
+                                        {% if req.status == 'pending' %}
+                                        <form method="POST" class="d-inline">
+                                            <input type="hidden" name="reset_id" value="{{ req.id }}">
+                                            <button name="action" value="approve_reset"
+                                                class="btn btn-success btn-sm">Approve</button>
+                                            <button name="action" value="reject_reset"
+                                                class="btn btn-danger btn-sm">Reject</button>
+                                        </form>
+                                        {% elif req.status == 'approved' %}
+                                        <span class="text-success">Approved</span>
+                                        {% elif req.status == 'rejected' %}
+                                        <span class="text-danger">Rejected</span>
+                                        {% elif req.status == 'used' %}
+                                        <span class="text-secondary">Used</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="6" class="text-center text-muted">No password reset requests.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h4>All Users</h4>
+                <div class="users-scrollable-table">
+                    <table class="table table-bordered table-sm mb-0">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Admin?</th>
+                                <th>Created By</th>
+                                <th>Online</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for user in users %}
+                            <tr>
+                                <td>{{ user.username }}</td>
+                                <td>{% if user.is_admin %}<span class="badge bg-primary" title="Administrator"><i
+                                            class="bi bi-shield-lock-fill"></i> Admin</span>{% else %}No{% endif %}</td>
+                                <td>{% if user.created_by %}{{ user.created_by }}{% else %}<span
+                                        class="text-muted">system</span>{% endif %}</td>
+                                <td>{% if user.online %}<span class="text-success">Online</span>{% else %}<span
+                                        class="text-muted">Offline</span>{% endif %}</td>
+                                <td>
+                                    {% if not user.is_admin %}
+                                    <form method="POST" class="d-inline">
+                                        <input type="hidden" name="user_id" value="{{ user.id }}">
+                                        <button name="action" value="delete_user"
+                                            class="btn btn-danger btn-sm">Delete</button>
+                                    </form>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h4>Current Admins</h4>
+                <ul class="list-group mb-3">
+                    {% for user in users if user.is_admin %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-shield-lock-fill text-primary"></i> {{ user.username }}</span>
+                        {% if user.online %}<span class="badge bg-success">Online</span>{% else %}<span
+                            class="badge bg-secondary">Offline</span>{% endif %}
+                    </li>
+                    {% endfor %}
+                    {% if not users|selectattr('is_admin')|list %}
+                    <li class="list-group-item text-muted">No admins found.</li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
