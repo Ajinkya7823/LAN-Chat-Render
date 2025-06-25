@@ -5,3 +5,4 @@ python-socketio
 python-engineio
 Werkzeug
 cryptography
+gunicorn
